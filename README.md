@@ -56,4 +56,4 @@ ECLIPSE - WINDOW - PREFERENCES - ANDROID - BUILD
 	 
 	 AND
 	 
-	 that you import the Google Play Services lib from your android_sdk directory.
+	 that you import the Google Play Services lib from your android_sdk directory and fix the reference in right-click preferences - Android - Libary.
