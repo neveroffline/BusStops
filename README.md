@@ -11,7 +11,15 @@ More options @ http://cabq.gov/abq-data
 
 TO SETUP:
 
-Setup new Google API Project, name it w/e you want
+Please make sure you right click project, rename application package.
+	 
+	 AND
+	 
+	 that you import the Google Play Services lib from your android_sdk directory and fix the reference in right-click 
+	 preferences - Android - Libary.
+
+
+Now Setup new Google API Project, name it w/e you want
 
 https://console.developers.google.com/project?authuser=0
 
@@ -52,8 +60,4 @@ ECLIPSE - WINDOW - PREFERENCES - ANDROID - BUILD
 	 
 	 Click OK and paste your new KEY in the AndroidManifest.xml
 	 
-	 Also make sure you right click project, rename application package
 	 
-	 AND
-	 
-	 that you import the Google Play Services lib from your android_sdk directory and fix the reference in right-click preferences - Android - Libary.
