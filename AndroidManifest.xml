@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="amo.busstops.abq"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<!-- Remember to rename the above package
+	From ECLIPSE right click project and select 
+		Android Tools - Rename application package
+	 -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<!-- The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended. 
+     Using below in case we can't get a GPS lock inside the building... 
+     -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/bus_station_icon"
+        android:label="@string/app_name"
+        >
+        <meta-data
+    android:name="com.google.android.gms.version"
+    android:value="@integer/google_play_services_version" />
+
+<!--
+Setup new Google API Project, name it w/e you want
+https://console.developers.google.com/project?authuser=0
+
+	Under API's and AUTH - API's turn on the following:
+
+	Google Maps Android API v2 	
+	Google Maps Geolocation API 	
+	Google Maps JavaScript API v3
+
+From ECLIPSE, grab your SH1 fingerprint DEBUG KEY:
+ECLIPSE - WINDOW - PREFERENCES - ANDROID - BUILD
+	it will look something like this
+	 74:73:70:7F:3B:F8:43:77:87:77:77:77:55:E7:74:7D:CF:77:77:79
+	 
+	 Highlight and Cut/Copy your SH1 fingerprint.
+	 Go back to your API Console
+	 Select CREATE NEW KEY
+	 SELECT ANDROID
+	 paste your SH1 fingerprint and add a semicolon ;yourpackagename
+	 it will look something like this
+	 74:73:70:7F:3B:F8:43:77:87:77:77:77:55:E7:74:7D:CF:77:77:79;amo.busstops.abq
+	   
+click OK and paste your new key below
+ -->
+        
+        <!-- DEBUG -->
+        <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="YUOR KEY HERE"/>
+
+        <!-- PRODUCTION
+        <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value=""/>
+         -->
+        
+        
+        <activity
+            android:name="amo.busstops.abq.ShowStopsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
