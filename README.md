@@ -11,12 +11,12 @@ More options @ http://cabq.gov/abq-data
 
 TO SETUP:
 
-Please make sure you right click project, rename application package.
+	Please make sure you right click project, rename application package.
 	 
 	 AND
 	 
-	 that you import the Google Play Services lib from your android_sdk directory and fix the reference in right-click 
-	 preferences - Android - Libary.
+	 that you import the Google Play Services lib from your android_sdk directory and fix the reference in 
+	 right-click preferences - Android - Libary.
 
 
 Now Setup new Google API Project, name it w/e you want
