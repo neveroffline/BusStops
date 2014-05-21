@@ -62,11 +62,11 @@ ECLIPSE - WINDOW - PREFERENCES - ANDROID - BUILD
 	 
 	 Go back to your API Console
 	 
-	 Select CREATE NEW KEY
+	 Select CREATE NEW KEY under CREDENTIALS
 	 
 	 SELECT ANDROID
 	 
-	 paste your SH1 fingerprint and add a semicolon ;yourpackagename
+	 paste your SH1 fingerprint and add a semicolon ;yourpackagenameyoucreatedabove
 	 
 	 it will look something like this
 	 
@@ -75,8 +75,9 @@ ECLIPSE - WINDOW - PREFERENCES - ANDROID - BUILD
 	 
 	 Click CREATE and paste your new KEY in the AndroidManifest.xml
 
+
 	 
-	 You should be good to go.
+You should be good to go.  Whew.
 
 	 
 	 
