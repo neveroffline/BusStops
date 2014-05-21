@@ -34,9 +34,6 @@ Remove the previous google_play_services_lib reference and ADD the new one you j
 After you have this "BusStops" project imported, please Right Click it in the project tree and select Android Tools - Rename Application Package.  Remember this new packagename as we will need it for the Google API Key setup.
 
 
-Now Grab your SH1 DEBUG fingerprint from WINDOW-PREFERENCES-ANDROID-BUILD and highlight/cut/copy this text.
-
-
 Now Setup a new Google API Project, name it w/e you want
 
 https://console.developers.google.com/project?authuser=0
