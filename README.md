@@ -31,8 +31,7 @@ Once Downloaded and imported, Right click the project tree in Eclipse, select pr
 Remove the previous google_play_services_lib reference and ADD the new one you just added in the other step above.
 
 
-After you have this project imported, please Right Click the project tree and select Android Tools - Rename Application Package.
-Remember this packagename as we will need it for the Google API Key setup.
+After you have this "BusStops" project imported, please Right Click it in the project tree and select Android Tools - Rename Application Package.  Remember this new packagename as we will need it for the Google API Key setup.
 
 
 Now Grab your SH1 DEBUG fingerprint from WINDOW-PREFERENCES-ANDROID-BUILD and highlight/cut/copy this text.
