@@ -64,7 +64,7 @@ ECLIPSE - WINDOW - PREFERENCES - ANDROID - BUILD
 	 
 	 paste your SH1 fingerprint and add a semicolon ;yourpackagenameyoucreatedabove
 	 
-	 it will look something like this
+	 it will look something like this (no whitespace)
 	 
 	 74:73:70:7F:3B:F8:43:77:87:77:77:77:55:E7:74:7D:CF:77:77:79;amo.busstops.abq
 	 
